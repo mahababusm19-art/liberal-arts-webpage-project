@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Students</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f6f9;
+text-align:center;
+}
+
+h1{
+margin-top:30px;
+}
+
+.container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+padding:40px;
+}
+
+.card{
+background:white;
+width:220px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+padding:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.name{
+font-size:20px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.year{
+color:gray;
+}
+
+a{
+display:block;
+margin-top:30px;
+}
+
+</style>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<div class="students-container">
+
+<div class="student">
+<img src="https://christuniversity.in/uploads/testimonial/medium/1089840151_2025-11-11_03-05-26.jpeg">
+<h3>Sota Matazuki</h3>
+<p>Year 3</p>
+</div>
+
+<div class="student">
+<img src="https://christuniversity.in/uploads/testimonial/medium/1036302565_2025-11-11_03-04-03.jpg">
+<h3>Ms. Pranati Narain</h3>
+<p>Year 3</p>
+</div>
+
+<div class="student">
+<img src="https://christuniversity.in/uploads/testimonial/medium/915455267_2023-11-16_05-05-39.jpg">
+<h3>SARANYA BHAKUNI</h3>
+<p>Year 3</p>
+</div>
+
+</div>
+
+<body>
+
+<h1>Our Students</h1>
+
+<div class="container">
+
+{% for s in students %}
+
+<div class="card">
+
+
+
+<div class="name">{{ s.name }}</div>
+
+<div class="year">Year {{ s.year }}</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+<a href="/home">Back</a>
+
+</body>
+</html>

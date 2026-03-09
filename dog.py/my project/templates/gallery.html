@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Department Gallery</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+background:#f4f6f9;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:40px;
+}
+
+.gallery img{
+width:250px;
+border-radius:10px;
+}
+
+</style>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>Department Gallery</h1>
+
+<div class="gallery">
+ 
+
+>
+<img src="https://christuniversity.in/uploads/departmentactivities/medium/1341890272_2025-07-10_05-22-18.webp">
+<img src="https://farm8.staticflickr.com/7864/33607220118_ec305a4784_z.jpg">
+<img src="https://farm66.staticflickr.com/65535/53054565470_31538fbbe4_z.jpg">
+<img src="https://farm66.staticflickr.com/65535/54998785561_8100cab438_z.jpg">
+
+</div>
+
+<a href="/home">Back</a>
+
+</body>
+
+</html>

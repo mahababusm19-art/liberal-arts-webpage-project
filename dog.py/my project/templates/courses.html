@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Courses</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f7f7f7;
+text-align:center;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,250px);
+justify-content:center;
+gap:30px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+background:#4CAF50;
+color:white;
+transform:scale(1.05);
+}
+
+</style>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>Courses Offered</h1>
+
+<div class="container">
+
+{% for c in courses %}
+
+<div class="card">
+
+<h3>{{ c }}</h3>
+
+<p>Liberal Arts Course</p>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+<a href="/home">Back</a>
+
+</body>
+</html>

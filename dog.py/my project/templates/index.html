@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Liberal Arts Department</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6f9;
+}
+
+/* HEADER */
+
+header{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* NAVBAR */
+
+nav{
+background:#444;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+/* HERO SECTION */
+
+.hero{
+background-image:url("https://christuniversity.in/uploads/coursecategory/medium/1116399176_2025-07-02_10-18-56.webp");
+background-size:cover;
+background-position:center;
+height:400px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:40px;
+font-weight:bold;
+}
+
+/* ABOUT SECTION */
+
+.section{
+padding:50px;
+text-align:center;
+}
+
+.section h2{
+margin-bottom:20px;
+}
+
+/* FEATURES */
+
+.features{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.feature-box{
+background:white;
+padding:30px;
+width:220px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.gallery img{
+width:250px;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Department of Liberal Arts</h1>
+<p>Creative Learning | Critical Thinking | Innovation</p>
+
+</header>
+
+
+<nav>
+
+<a href="/courses">Courses</a>
+<a href="/students">Students</a>
+<a href="/faculty">Faculty</a>
+<a href="/placements">Placements</a>
+<a href="/timetable">Timetable</a>
+<a href="/logout">Logout</a>
+<a href="/gallery">Gallery</a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+Welcome to Liberal Arts
+
+</div>
+
+
+<!-- ABOUT -->
+
+<div class="section">
+
+<h2>About Our Department</h2>
+
+<p>
+The Department of Liberal Arts promotes interdisciplinary education that blends
+humanities, social sciences, creativity, and technology.
+Students develop critical thinking, communication, storytelling,
+and problem-solving skills.
+</p>
+
+</div>
+
+
+<!-- FEATURES -->
+
+<div class="section">
+
+<h2>What You Will Learn</h2>
+
+<div class="features">
+
+<div class="feature-box">Critical Thinking</div>
+<div class="feature-box">Storytelling</div>
+<div class="feature-box">Political Thought</div>
+<div class="feature-box">Python Programming</div>
+<div class="feature-box">Design Thinking</div>
+<div class="feature-box">Sustainability Studies</div>
+
+</div>
+
+</div>
+
+
+<!-- GALLERY -->
+
+<div class="section">
+
+<h2>Department Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://farm66.staticflickr.com/65535/54998591956_56c2bfae29_z.jpg">
+
+<img src="https://farm66.staticflickr.com/65535/54989659526_4f3b9b38ec_z.jpg">
+
+<img src="https://farm66.staticflickr.com/65535/55023733057_b0fd7a8477_z.jpg">
+
+<img src="https://farm66.staticflickr.com/65535/53182445599_0e7b4360cd_z.jpg">
+
+</div>
+
+</div>
+
+
+<!-- ACHIEVEMENTS -->
+
+<div class="section">
+
+<h2>Department Achievements</h2>
+
+<p>🏆 National Media Competition Winners</p>
+<p>🏆 Best Interdisciplinary Program Award</p>
+<p>🏆 Student Research Publications</p>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div class="section">
+
+<h2>Contact Us</h2>
+
+<p>Email: liberalarts@university.edu</p>
+<p>Phone: +91 9876543210</p>
+<p>Location: Liberal Arts Block, University Campus</p>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Department of Liberal Arts</p>
+
+</footer>
+
+
+
+</body>
+</html>

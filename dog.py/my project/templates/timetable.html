@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Timetable</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#fafafa;
+text-align:center;
+}
+
+h1{
+margin-top:30px;
+}
+
+table{
+margin:auto;
+margin-top:40px;
+border-collapse:collapse;
+width:60%;
+background:white;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+th,td{
+padding:15px;
+border:1px solid #ddd;
+}
+
+th{
+background:#4CAF50;
+color:white;
+}
+
+tr:hover{
+background:#f2f2f2;
+}
+
+a{
+display:block;
+margin-top:40px;
+}
+
+</style>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<h1>Weekly Timetable</h1>
+
+<table>
+
+<tr>
+<th>Day</th>
+<th>Course</th>
+</tr>
+
+{% for t in timetable %}
+
+<tr>
+<td>{{ t.day }}</td>
+<td>{{ t.course }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<a href="/home">Back</a>
+
+</body>
+
+</html>
